@@ -42,14 +42,8 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.9</version>
                 <configuration>
-                    <serverId>docker-hub</serverId>
-                    <registryUrl>https://hub.docker.com</registryUrl>
-                    <tag>latest</tag>
-                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
                 </configuration>
-
-
                 <!--<executions>-->
                     <!--<execution>-->
                         <!--<id>default</id>-->
