@@ -42,8 +42,13 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.9</version>
                 <configuration>
+                    <repository>docker-hub/lvwei/image</repository>
+                    <tag>latest</tag>
+                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
                 </configuration>
+
+
                 <!--<executions>-->
                     <!--<execution>-->
                         <!--<id>default</id>-->
